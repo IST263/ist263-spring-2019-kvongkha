@@ -1,0 +1,42 @@
+/* This describes how the content should be displayed */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    width: 5000px;
+}
+
+h1 {
+    color: #3E3D3C;
+    font-size: 3em;
+    font-weight: normal;
+    text-align: right;
+    background: #999;
+    padding: 10px;
+}
+
+h2 {
+    color: #999999;
+    font-weight: normal;
+}
+
+li {
+    padding: 10px;
+    list-style-type: square;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #666;
+}
+
+th {
+    background: #ccc;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    text-align: left;
+    padding: 15px;
+}
