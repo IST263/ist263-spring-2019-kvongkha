@@ -1,0 +1,45 @@
+body {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+address {
+    margin: 5px 0;
+}
+
+main {
+    background-image: url('../images/header-bg.png');
+    background-repeat: repeat-x;
+    margin-bottom: 35px;
+}
+
+header.jumbotron {
+    background-image: url('../images/human-icon.png');
+    background-position-x: 95%;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+h1 {
+    padding: 20px 0 0 20px;
+}
+
+h4 {
+    padding-left: 20px;
+}
+
+article {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+h3, h5 {
+    margin: 0; padding: 0;
+    line-height: 1.5em;
+}
+
+article.company-one {
+    background-image: url('../images/company-logo-1.png');
+    background-position-x: 90%;
+    background-repeat: no-repeat;
+}

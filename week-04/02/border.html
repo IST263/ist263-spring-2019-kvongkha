@@ -5,15 +5,11 @@
     <title>IST 263 - Borders</title>
 
     <!-- This is loading an external CSS file -->
-    <link href="../Monday/sample.css" rel="stylesheet" />
-
-    <!-- Tell your browser to load the font files from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
 
     <!-- You can in a similar fashion include fonts from other sources -->
     <style>
-        /* Type selector */
-        
+        /* Type selector */        
         h1 {
             font-family: "Times New Roman", Helvetica, Arial, sans-serif;
             color: orange;
@@ -24,14 +20,16 @@
             
             padding-bottom: 50px;    
             padding-left: 50px;
-
-            or you also write it as
-            padding: 50px 50px;
             */
+            
+            /* or you also write it as */
+            padding: 50px 50px 50px 50px;
         }
         
-        p {
-            font-family: 'Roboto Condensed', sans-serif;
+        p {            
+            padding: 10px;
+            margin: 15px;
+
             border-top-width: 20px;
             border-top-style: ridge;
             border-top-color: red;
@@ -47,10 +45,7 @@
             border-right-width: 2px;
             border-right-style: solid;
             border-right-color: red;
-            padding: 10px;
-            margin: 15px;
-            /* That was the longhand, a more common way to write the above properties is 
-                as follows
+            /* That was the longhand, a more common way to write the above properties is as follows
             */
             /* CSS Shorthand */
             border: 2px solid red;
@@ -64,7 +59,12 @@
 
 <body>
     <h1>Borders - A good example for CSS shorthand</h1>
-
+    <nav>
+            <ul>
+                <li><a href="index.html">Week 04.02 Home</a></li>
+                <li>Borders</li>
+            </ul>
+        </nav>
     <P>
         Lorem ipsum dolor sit amet, vestibulum pretium ullamcorper dolor suspendisse sed. Diam in amet sed fermentum, pharetra libero id, fusce metus voluptas est lacus, in risus nulla ante vulputate et accumsan. <strong>Duis hendrerit ultrices pulvinar nec, pulvinar</strong>        pariatur nonummy vestibulum ut, tincidunt id elit cubilia fringilla velit. In tellus volutpat quisque. <br><br>Aliquam morbi ut tempus neque, et quisque metus auctor dignissim, elit augue pulvinar quam suscipit integer dui, id taciti feugiat amet
         ipsum nec tortor, lorem nibh porttitor dictum feugiat quam hac. Quis egestas euismod <span>enim mattis volutpat dui</span>, feugiat duis felis sit eget eu, in gravida lorem vitae. Auctor eu urna semper enim porttitor. Ultrices vitae metus, enim

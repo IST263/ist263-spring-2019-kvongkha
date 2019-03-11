@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IST 263 - Javascript, DOM Manipulation</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2>JavaScript DOM Manipulation</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>'document' object</h3>
+                    <script>
+                        console.log(document);
+                    </script>
+                    <p>Open the 'Dev Console' and look in the 'Console' tab</p>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>Writing to the DOM</h3>
+                    <script>
+                        function writeToDOM() {
+                            document.getElementById("emptyContainer").style.fontSize = "30px";
+                            document.getElementById("emptyContainer").innerHTML = "I can manipulate the DOM...on the fly";
+                        }
+
+                        function clearDOM() {
+                            document.getElementById("emptyContainer").innerHTML = "";
+                        }
+                    </script>
+                    <button class="btn btn-default" onclick="writeToDOM()">Click Me</button>
+                    <button class="btn btn-warning" onclick="clearDOM()">Clear DOM</button>
+
+                    <div id="emptyContainer"></div>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>Change CSS</h3>
+                    <script>
+                        function changeBG(color) {
+                            //I can call a function from inside a function
+                            writeToDOM();
+
+                            document.getElementById("emptyContainer").style.backgroundColor = color;
+                            document.getElementById("emptyContainer").style.color = "#fff";
+
+                            /*
+                                Write some JS to set the font size to 15px
+                            */
+                        }
+                    </script>
+                    <button class="btn btn-default" onclick="changeBG('red')">Change Background - Red</button>
+                    <button class="btn btn-primary" onclick="changeBG('blue')">Change Background - Blue</button>
+
+                    <br><br>
+                    <a href="https://www.w3schools.com/jsref/dom_obj_style.asp" target="_blank">Complete List of Style Properties</a>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>Let's try something</h3>
+                    <script>
+                        function displayFavColor() {
+
+                            var favColorEntered = document.getElementById("my-fav-color").value;
+                            alert("You entered " + favColorEntered)
+
+                            //Change this function so you display the color in #favColorContainer
+                            document.getElementById("favColorContainer").innerHTML = " You said the favorite color is " + favColorEntered;
+
+                        }
+                    </script>
+
+                    <p>
+                        <label>What is your favorite color? </label>
+                        <input type="text" id="my-fav-color" value="" />
+                    </p>
+
+                    <p>
+                        <input type="button" class="btn btn-primary" value="Submit" onclick="displayFavColor()" />
+                    </p>
+                    <div id="favColorContainer"></div>
+                </div>
+            </div>
+
+
+    </main>
+</body>
+
+</html>

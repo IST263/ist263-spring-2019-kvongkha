@@ -3,11 +3,13 @@
 
 <head>
     <title>IST 263</title>
+
     <!-- This is loading an external CSS file -->
-    <link href="sample.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
 
     <!-- This is an internal CSS Block -->
     <style>
+        /* Properties defined here will override those defined in the external file because this is defined after */
         p {
             font-size: 15px;
             line-height: 18px;
@@ -15,18 +17,26 @@
             width: 500px;
             border: 2px solid red;
         }
-        
+
         td {
-            border-bottom: 1px solid #e1e1e1;
+            border-bottom: 1px solid red;
             /*
-            There is a rule in samplec.ss for td, how does a new rule affect an existing rule.
-            */
+                There is already a rule in style.css for td, how does a new rule affect an existing rule.
+                */
         }
     </style>
+
+
 </head>
 
 <body>
     <h1>Hello World !!!</h1>
+    <nav>
+            <ul>
+                <li><a href="without-css.html">Without CSS</a></li>
+                <li><a href="with-css.html">With CSS</a></li>
+            </ul>
+        </nav>
     <hr>
     <h2>This is my shopping list</h2>
     <ul>
@@ -58,12 +68,18 @@
     <hr>
     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
     <p>
-        Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <q>Duis aute irure dolor in reprehenderit in voluptate velit esse</q>, cillum dolore eu fugiat
-        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. <q>Duis aute irure dolor in reprehenderit in voluptate velit esse</q>,
+        cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+        id est laborum.
     </p>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
 
     <hr> There are a lot more CSS properties at your disposal. You can find a complete list at <a target="_blank" href="https://www.w3schools.com/cssref/">https://www.w3schools.com/cssref/</a>

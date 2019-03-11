@@ -3,16 +3,20 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
-    width: 5000px;
 }
 
 h1 {
-    color: #3E3D3C;
-    font-size: 3em;
+    color: darkgray;
+    font-size: 40px;
     font-weight: normal;
-    text-align: right;
-    background: #999;
+    text-align: left;
+    background: black;
     padding: 10px;
+}
+
+p {
+    font-size: 15px;
+    color: blue;
 }
 
 h2 {
@@ -27,11 +31,11 @@ li {
 
 table {
     width: 100%;
-    border: 1px solid #666;
+    border: 1px solid grey
 }
 
 th {
-    background: #ccc;
+    background: lightcoral;
     padding: 15px;
     text-align: left;
 }
